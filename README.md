@@ -64,5 +64,17 @@ echo $LD_LIBRARY_PATH
 ```
 注：我并没有完全显示出来，但是程序能够运行
 
+#### 获得许可
+- 如果已经通过邮箱获得license.dat 和 license.key 这两个文件，则无需进行此步
+- 如果重复进行此步，则以新生成的license.dat 和 license.key 两个文件为准
+- 对于MacOS和Linux系统，打开一个新的终端，此时当前路径为用户目录，以符号 ~ 表示
+- 假设用户的key为 '19200817f147gd9f60abc791def047fb' ，请输入如下命令获取 杉数求解器的许可文件
+```
+copt_licgen -key 19200817f147gd9f60abc791def047f
+```
+- 对于Linux系统，用户目录形如： "/home/mmy" ， 可在终端下执行下述命令将2个授权文档 license.dat 和 license.key 移动到目录 "/home/mmy/copt" 中。
+- 注意： 若用户目录的copt文件夹和环境变量指向的目录下均存在许可文件 license.dat 和 license.key ，将优先检查并使用前者（即copt文件夹中）的许可。这应该就是我，虽然环境变量并没有完全显示出来，但是程序能够运行的原因
+---
 
-
+参考官方文档：
+https://guide.coap.online/copt/zh-doc/install.html
